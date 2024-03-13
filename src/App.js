@@ -14,7 +14,7 @@ function generateObstacles(gameMap, playerPos, obstacleCount) {
         } while ((x === playerPos[0] && y === playerPos[1]) || newMap[x][y] !== '.');
         newMap[x][y] = 'obstacle';
     }
-    return newMap.map(row => [...row]); // Shallow copy to ensure a new reference
+    return newMap.map(row => [...row]); 
 }
 
 function isValidMove(x, y, gameMap) {
